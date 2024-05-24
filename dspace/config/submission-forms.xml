@@ -155,6 +155,195 @@
             </row>
             <row>
                 <field>
+                    <dc-schema>dcterms</dc-schema>
+                    <dc-element>hasPart</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Related Material/Data (has part):</label>
+                    <input-type>onebox</input-type>
+		    <hint>Link to related data or other materials (haspart).</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dcterms</dc-schema>
+                    <dc-element>isPartOf</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Related Material/Data (is part of):</label>
+                    <input-type>onebox</input-type>
+		    <hint>Link to related paper or other materials (ispartof).</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>conference</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Conference</label>
+                    <input-type>onebox</input-type>
+		    <hint>Enter the name of the conference.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>journaltitle</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Journal</label>
+                    <input-type>onebox</input-type>
+		    <hint>Enter the name of the journal.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>booktitle</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Book Title</label>
+                    <input-type>onebox</input-type>
+		    <hint>Enter the name of the book.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Rights URI</label>
+                    <input-type>onebox</input-type>
+		    <hint>Enter URL linking to rights information.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Rights Statement</label>
+                    <input-type>textarea</input-type>
+                    <hint>Statement of rights information.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>volume</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Volume</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the volume number.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>issue</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Issue</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the issue number.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>extentfirstpage</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>First Page</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the first page of the article.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>extentlastpage</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Last Page</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the last page of the article.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>department</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Department</label>
+                    <input-type value-pairs-name="common_departments">dropdown</input-type>
+                    <hint>Select the associated department from the list above.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>researchgroup</dc-qualifier>
+                    <repeatable>false</repeatable>
+		    <label>Research Group, Center, and/or Institute</label>
+                    <input-type value-pairs-name="common_research_group">dropdown</input-type>
+                    <hint>Select the associated research group from the list above.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>college</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>College</label>
+                    <input-type value-pairs-name="common_colleges">dropdown</input-type>
+                    <hint>Select the associated college(s) from the list above.  You may select more than one.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>university</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>University</label>
+                    <input-type value-pairs-name="common_universities">dropdown</input-type>
+                    <hint>Select the university from the list above.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>type</dc-element>
                     <dc-qualifier></dc-qualifier>
@@ -209,6 +398,30 @@
                     <label>Abstract</label>
                     <input-type>textarea</input-type>
                     <hint>Enter the abstract of the item.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>data</dc-element>
+                    <dc-qualifier>thumbpage</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Thumbnail Page</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the page number to use as thumbnail (0-based).</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>mus</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>technicalreportnumber</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Technical Report Number</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the technical report number for this item.</hint>
                     <required></required>
                 </field>
             </row>
@@ -1484,6 +1697,450 @@
             <pair>
                 <displayed-value>Other</displayed-value>
                 <stored-value>Other</stored-value>
+            </pair>
+        </value-pairs>
+
+        <!-- departments -->
+        <value-pairs value-pairs-name="common_departments">
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+		    <displayed-value>
+			Aerospace &amp; Mechanical Engineering
+		    </displayed-value>
+		    <stored-value>
+			Aerospace &amp; Mechanical Engineering
+		    </stored-value>
+            </pair>
+            <pair>
+		    <displayed-value>
+			Agricultural Economics &amp; Economics
+		    </displayed-value>
+		    <stored-value>
+			Agricultural Economics &amp; Economics
+		    </stored-value>
+            </pair>
+            <pair>
+		    <displayed-value>
+			Agricultural Education
+		    </displayed-value>
+		    <stored-value>
+			Agricultural Education
+		    </stored-value>
+            </pair>
+            <pair>
+		    <displayed-value>
+			Agricultural Engineering
+		    </displayed-value>
+		    <stored-value>
+			Agricultural Engineering
+		    </stored-value>
+            </pair>
+            <pair>
+		    <displayed-value>
+			American Studies
+		    </displayed-value>
+		    <stored-value>
+			American Studies
+		    </stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Animal &amp; Range Sciences</displayed-value>
+              <stored-value>Animal &amp; Range Sciences</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Architecture</displayed-value>
+              <stored-value>Architecture</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Art</displayed-value>
+              <stored-value>Art</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Biological Sciences</displayed-value>
+              <stored-value>Biological Sciences</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Botany</displayed-value>
+              <stored-value>Botany</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Business Education</displayed-value>
+              <stored-value>Business Education</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Business</displayed-value>
+              <stored-value>Business</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Cell Biology &amp; Neuroscience</displayed-value>
+              <stored-value>Cell Biology &amp; Neuroscience</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Center for Biofilm Engineering</displayed-value>
+              <stored-value>Center for Biofilm Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Chemical &amp; Biological Engineering</displayed-value>
+              <stored-value>Chemical &amp; Biological Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Chemical Engineering</displayed-value>
+              <stored-value>Chemical Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Chemistry &amp; Biochemistry</displayed-value>
+              <stored-value>Chemistry &amp; Biochemistry</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Civil Engineering</displayed-value>
+              <stored-value>Civil Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Computer Science</displayed-value>
+              <stored-value>Computer Science</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Counseling</displayed-value>
+              <stored-value>Counseling</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Dairy</displayed-value>
+              <stored-value>Dairy</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Earth Sciences</displayed-value>
+              <stored-value>Earth Sciences</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Ecology</displayed-value>
+              <stored-value>Ecology</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Education</displayed-value>
+              <stored-value>Education</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Electrical &amp; Computer Engineering</displayed-value>
+              <stored-value>Electrical &amp; Computer Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Engineering</displayed-value>
+              <stored-value>Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>English</displayed-value>
+              <stored-value>English</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Entomology</displayed-value>
+              <stored-value>Entomology</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Environmental Engineering</displayed-value>
+              <stored-value>Environmental Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Filmmaking</displayed-value>
+              <stored-value>Filmmaking</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Film &amp; Photography</displayed-value>
+              <stored-value>Film &amp; Photography</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Fish and Wildlife Management</displayed-value>
+              <stored-value>Fish and Wildlife Management</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Food Systems, Nutrition &amp; Kinesiology</displayed-value>
+              <stored-value>Food Systems, Nutrition &amp; Kinesiology</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Genetics</displayed-value>
+              <stored-value>Genetics</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Human Development &amp; Community Health</displayed-value>
+              <stored-value>Human Development &amp; Community Health</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>History, Philosophy &amp; Religious Studies</displayed-value>
+              <stored-value>History, Philosophy &amp; Religious Studies</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Home Economics</displayed-value>
+              <stored-value>Home Economics</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Immunology &amp; Infectious Diseases</displayed-value>
+              <stored-value>Immunology &amp; Infectious Diseases</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Industrial Engineering</displayed-value>
+              <stored-value>Industrial Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Intercollege Programs for Science Education</displayed-value>
+              <stored-value>Intercollege Programs for Science Education</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Land Resources &amp; Environmental Sciences</displayed-value>
+              <stored-value>Land Resources &amp; Environmental Sciences</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Library</displayed-value>
+              <stored-value>Library</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Mathematical Sciences</displayed-value>
+              <stored-value>Mathematical Sciences</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Mechanical &amp; Industrial Engineering</displayed-value>
+              <stored-value>Mechanical &amp; Industrial Engineering</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Microbiology &amp; Immunology</displayed-value>
+              <stored-value>Microbiology &amp; Immunology</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Modern Language &amp; Literatures</displayed-value>
+              <stored-value>Modern Language &amp; Literatures</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Molecular Biology</displayed-value>
+              <stored-value>Molecular Biology</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Music</displayed-value>
+              <stored-value>Music</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Native American Studies</displayed-value>
+              <stored-value>Native American Studies</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Nursing</displayed-value>
+              <stored-value>Nursing</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Physical Education</displayed-value>
+              <stored-value>Physical Education</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Physics</displayed-value>
+              <stored-value>Physics</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Plant Sciences &amp; Plant Pathology</displayed-value>
+              <stored-value>Plant Sciences &amp; Plant Pathology</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Political Science</displayed-value>
+              <stored-value>Political Science</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Psychology</displayed-value>
+              <stored-value>Psychology</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Research Centers</displayed-value>
+              <stored-value>Research Centers</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Science and Natural History</displayed-value>
+              <stored-value>Science and Natural History</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Sociology and Anthropology</displayed-value>
+              <stored-value>Sociology and Anthropology</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>UIT</displayed-value>
+              <stored-value>UIT</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>University College</displayed-value>
+              <stored-value>University College</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>University Studies</displayed-value>
+              <stored-value>University Studies</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Veterinary</displayed-value>
+              <stored-value>Veterinary</stored-value>
+            </pair>
+            <pair>
+              <displayed-value>Zoology</displayed-value>
+              <stored-value>Zoology</stored-value>
+            </pair>
+        </value-pairs>
+
+        <!-- researchgroups -->
+        <value-pairs value-pairs-name="common_research_group">
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Central Ag Research Center</displayed-value>
+                <stored-value>Central Ag Research Center</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Northern Ag Research Center</displayed-value>
+                <stored-value>Northern Ag Research Center</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Northwestern Ag Research Center</displayed-value>
+                <stored-value>Northwestern Ag Research Center</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Southern Ag Research Center</displayed-value>
+                <stored-value>Southern Ag Research Center</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Western Ag Research Center</displayed-value>
+                <stored-value>Western Ag Research Center</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Western Triangle Agriculture Research Center</displayed-value>
+                <stored-value>Western Triangle Agriculture Research Center</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ADVANCE Project TRACS</displayed-value>
+                <stored-value>ADVANCE Project TRACS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Center for Biofilm Engineering</displayed-value>
+                <stored-value>Center for Biofilm Engineering</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Energy Research Institute</displayed-value>
+                <stored-value>Energy Research Institute</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Food and Health Lab</displayed-value>
+                <stored-value>Food and Health Lab</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>IT Center</displayed-value>
+                <stored-value>IT Center</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Montana INBRE Bioinformatics and Biostatistics Core</displayed-value>
+                <stored-value>Montana INBRE Bioinformatics and Biostatistics Core</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Montana Institute on Ecosystems</displayed-value>
+                <stored-value>Montana Institute on Ecosystems</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>MSU Human Resources</displayed-value>
+                <stored-value>MSU Human Resources</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Museum of the Rockies</displayed-value>
+                <stored-value>Museum of the Rockies</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Optical Technology Center</displayed-value>
+                <stored-value>Optical Technology Center</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Partnership for International Research and Education (PIRE)</displayed-value>
+                <stored-value>Partnership for International Research and Education (PIRE)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Thermal Biology Institute (TBI)</displayed-value>
+                <stored-value>Thermal Biology Institute (TBI)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Western Transportation Institute (WTI)</displayed-value>
+                <stored-value>Western Transportation Institute (WTI)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>WWAMI Medical Education Program</displayed-value>
+                <stored-value>WWAMI Medical Education Program</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Zero Emissions Research and Technology (ZERT)</displayed-value>
+                <stored-value>Zero Emissions Research and Technology (ZERT)</stored-value>
+            </pair>
+        </value-pairs>
+
+        <!-- colleges -->
+        <value-pairs value-pairs-name="common_colleges">
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>College of Agriculture</displayed-value>
+                <stored-value>College of Agriculture</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>College of Arts &amp; Architecture</displayed-value>
+                <stored-value>College of Arts &amp; Architecture</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>College of Business</displayed-value>
+                <stored-value>College of Business</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>College of Education</displayed-value>
+                <stored-value>College of Education</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>College of Engineering</displayed-value>
+                <stored-value>College of Engineering</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>College of Letters &amp; Science</displayed-value>
+                <stored-value>College of Letters &amp; Science</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>College of Nursing</displayed-value>
+                <stored-value>College of Nursing</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Gallatin College</displayed-value>
+                <stored-value>Gallatin College</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Graduate School</displayed-value>
+                <stored-value>The Graduate School</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Health &amp; Human Development</displayed-value>
+                <stored-value>Health &amp; Human Development</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Library</displayed-value>
+                <stored-value>Library</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other Departments &amp; Programs</displayed-value>
+                <stored-value>Other Departments &amp; Programs</stored-value>
+            </pair>
+        </value-pairs>
+
+        <!-- universities -->
+        <value-pairs value-pairs-name="common_universities">
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Montana State University - Bozeman</displayed-value>
+                <stored-value>Montana State University - Bozeman</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Montana State University - Billings</displayed-value>
+                <stored-value>Montana State University - Billings</stored-value>
             </pair>
         </value-pairs>
 
