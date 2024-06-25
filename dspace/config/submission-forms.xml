@@ -295,7 +295,7 @@
                     <dc-schema>mus</dc-schema>
                     <dc-element>relation</dc-element>
                     <dc-qualifier>department</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
 		    <label>Department</label>
                     <input-type value-pairs-name="common_departments">dropdown</input-type>
                     <hint>Select the associated department from the list above.
